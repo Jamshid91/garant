@@ -210,14 +210,14 @@
             <div class="faq" id="faq">
                     <p class="title__text">Остались вопросы?</p>
                     <p class="sub-title__text">Заполните анкету и наш менеджер свяжется с вами в ближайщее время</p>
-                    <form action="mail.php" method="POST" class="faq-form">
+                    <form action="sender.php" method="post">
                         <label for="" class="faq-form__lab w-100">
                             Ваше имя
                             <input type="text" class="faq-form__inp w-100" id="" name="name" required>
                         </label>
                         <label for="" class="faq-form__lab w-100">
                             Ваш номер
-                            <input type="number" class="faq-form__inp w-100" id="" name="phone" required>
+                            <input type="text" class="faq-form__inp phone w-100" id="" name="phone" required>
                         </label>
                         <button type="submit" class="faq-form__btn">Оставить заявку</button>
                     </form>
@@ -332,9 +332,10 @@
         </div>
     </footer>
 
-    <!-- <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="assets/js/swiper.js"></script>
-    <!-- <script src="main.js"></script> -->
+    <script src="assets/js/validate.js"></script>
+    <script src="assets/js/mask.js"></script>
     <script src="assets/js/index.js"></script>
 </body>
 </html>
